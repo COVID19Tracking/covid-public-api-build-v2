@@ -29,7 +29,9 @@ const status = database.addCollection('status')
 status.insert(defaultMeta)
 
 sources(database, options.loadCache)
-  .then(() => write('status', status.chain().data({ removeMeta: true }).pop()))
+  .then(() =>
+    write(null, 'status', status.chain().data({ removeMeta: true }).pop())
+  )
   .then(() => generate(database))
   .then(() => {
     if (options.cache) {
