@@ -25,16 +25,13 @@ const defaultMeta = {
   version: package.version,
 }
 
-database.addCollection('status').insert(defaultMeta)
-
-write('status', defaultMeta)
+const status = database.addCollection('status')
+status.insert(defaultMeta)
 
 sources(database, options.loadCache)
+  .then(() => write('status', status.chain().data({ removeMeta: true }).pop()))
   .then(() => generate(database))
   .then(() => {
-    console.log(
-      database.getCollection('population').chain().find({ state: 'CA' })
-    )
     if (options.cache) {
       fs.ensureDirSync('./.cache')
       fs.writeFileSync('./.cache/database.json', database.serialize())
