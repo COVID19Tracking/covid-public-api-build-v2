@@ -27,7 +27,7 @@ const defaultMeta = {
 const status = database.addCollection('status')
 status.insert(defaultMeta)
 
-sources(database, options.loadCache)
+sources(options.loadCache)
   .then(() =>
     write(null, 'status', status.chain().data({ removeMeta: true }).pop())
   )
