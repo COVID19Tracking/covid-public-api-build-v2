@@ -1,8 +1,8 @@
 require('dotenv').config()
-const loki = require('lokijs')
 const { DateTime } = require('luxon')
 const fs = require('fs-extra')
 const commandLineArgs = require('command-line-args')
+const database = require('./lib/database')
 const sources = require('./lib/sources')
 const generate = require('./lib/generate')
 const package = require('./package.json')
@@ -13,7 +13,6 @@ const options = commandLineArgs([
   { name: 'loadCache', alias: 'l', type: Boolean },
 ])
 
-const database = new loki('covidApi')
 if (options.loadCache) {
   database.loadJSON(fs.readFileSync('./.cache/database.json'))
 }
