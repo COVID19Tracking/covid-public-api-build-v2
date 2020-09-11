@@ -21,7 +21,7 @@ fs.ensureDirSync('./_api/v2')
 
 const defaultMeta = {
   build_time: DateTime.local().setZone('UTC').toISO(),
-  license: 'CC-BY-3.0',
+  license: 'CC-BY-4.0',
   version: package.version,
 }
 
