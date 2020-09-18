@@ -29,24 +29,24 @@ checkTimeEt - `meta.updated`
 death - `outcomes.death`
 hospitalized - `hospitalized`
 dateChecked - `date`
-totalTestsViral
-positiveTestsViral
-negativeTestsViral
-positiveCasesViral
+totalTestsViral - `tests.pcr.total`
+positiveTestsViral - `tests.pcr.positive`
+negativeTestsViral - `tests.pcr.negative`
+positiveCasesViral - `cases.pcr`
 deathConfirmed - `outcomes.death.confirmed`
 deathProbable - `outcomes.death.probable`
-totalTestEncountersViral
-totalTestsPeopleViral
-totalTestsAntibody
-positiveTestsAntibody
-negativeTestsAntibody
-totalTestsPeopleAntibody
-positiveTestsPeopleAntibody
-negativeTestsPeopleAntibody
-totalTestsPeopleAntigen
-positiveTestsPeopleAntigen
-totalTestsAntigen
-positiveTestsAntigen
+totalTestEncountersViral - `tests.pcr.encounters`
+totalTestsPeopleViral - `tests.pcr.total.people`
+totalTestsAntibody - `tests.antibody.total`
+positiveTestsAntibody - `tests.antibody.positive`
+negativeTestsAntibody - `tests.andibody.negative`
+totalTestsPeopleAntibody - `tests.antibody.total.people`
+positiveTestsPeopleAntibody - `tests.antibody.positive.people`
+negativeTestsPeopleAntibody - `tests.antibody.negative.people`
+totalTestsPeopleAntigen - `tests.antigen.total.people`
+positiveTestsPeopleAntigen - `tests.antigen.positive.people`
+totalTestsAntigen - `tests.antigen.total`
+positiveTestsAntigen - `tests.antigen.positive`
 fips - **not migrated**
 positiveIncrease - `cases.calculated.change_from_prior_day`
 negativeIncrease - `tests.negative.calculated.change_from_prior_day`
