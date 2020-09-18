@@ -7,7 +7,64 @@ Calculated objects
 - `seven_day_average` - Average (mean) of the number over the prior seven days, including the current day. Set to `null` if there is no data
 - `seven_day_change_percent` - Percent change since seven days ago
 
-US Daily
+## States daily
+
+date - `date` - This is now in ISO Date format of YYYY-MM-DD
+state - `state`
+positive - `cases`
+negative - `tests.negative`
+pending - `tests.pending`
+totalTestResults - `tests.total`
+hospitalizedCumulative - `hospitalized`
+hospitalizedCurrently - `hospitalized.calculated.change_from_prior_day`
+inIcuCumulative - `hospitalized.in_icu`
+inIcuCurrently - `hospitalized.in_icu.calculated.change_from_prior_day`
+onVentilatorCumulative - `hospitalized.on_ventilator`
+onVentilatorCurrently - `hospitalized.on_ventilator.calculated.change_from_prior_day`
+recovered - `outcomes.recovered`
+dataQualityGrade - `meta.data_quality_grade`
+lastUpdateEt - `meta.update`
+dateModified - `meta.updated`
+checkTimeEt - `meta.updated`
+death - `outcomes.death`
+hospitalized - `hospitalized`
+dateChecked - `date`
+totalTestsViral
+positiveTestsViral
+negativeTestsViral
+positiveCasesViral
+deathConfirmed - `outcomes.death.confirmed`
+deathProbable - `outcomes.death.probable`
+totalTestEncountersViral
+totalTestsPeopleViral
+totalTestsAntibody
+positiveTestsAntibody
+negativeTestsAntibody
+totalTestsPeopleAntibody
+positiveTestsPeopleAntibody
+negativeTestsPeopleAntibody
+totalTestsPeopleAntigen
+positiveTestsPeopleAntigen
+totalTestsAntigen
+positiveTestsAntigen
+fips - **not migrated**
+positiveIncrease - `cases.calculated.change_from_prior_day`
+negativeIncrease - `tests.negative.calculated.change_from_prior_day`
+total - **not migrated**
+totalTestResultsSource - `meta.tests.total_source`
+totalTestResultsIncrease - `tests.total.calculated.change_from_prior_day`
+posNeg - **not migrated**
+deathIncrease - `outcomes.deaths.calculated.change_from_prior_day`
+hospitalizedIncrease - `hospitalized.calculated.change_from_prior_day`
+hash - **not migrated**
+commercialScore - **not migrated**
+negativeRegularScore - **not migrated**
+negativeScore - **not migrated**
+positiveScore - **not migrated**
+score - **not migrated**
+grade - **not migrated**
+
+## US Daily
 
 `date` - `date` - This is now in ISO Date format of YYYY-MM-DD
 dateChecked - **not migrated**
