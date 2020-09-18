@@ -9,7 +9,7 @@ Calculated objects
 
 ## States daily
 
-- `date - `date`` - This is now in ISO Date format of YYYY-MM-DD
+- `date` - `date` - This is now in ISO Date format of YYYY-MM-DD
 - `state` - `state`
 - `positive` - `cases`
 - `negative` - `tests.negative`
@@ -66,7 +66,7 @@ Calculated objects
 
 ## US Daily
 
-- `date - `date`` - This is now in ISO Date format of YYYY-MM-DD
+- `date` - `date` - This is now in ISO Date format of YYYY-MM-DD
 - `dateChecked` - **not migrated**
 - `death` - `outcomes.death`
 - `deathConfirmed` - `outcomes.death.confirmed`
