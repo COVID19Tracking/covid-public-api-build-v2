@@ -31,7 +31,7 @@ sources(options.loadCache)
   .then(() =>
     write(null, 'status', status.chain().data({ removeMeta: true }).pop())
   )
-  .then(() => generate(database))
+  .then(() => generate())
   .then(() => {
     if (options.cache) {
       fs.ensureDirSync('./.cache')
