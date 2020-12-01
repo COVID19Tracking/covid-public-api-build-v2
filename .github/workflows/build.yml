@@ -1,7 +1,7 @@
 name: V2 API Build
 on:
   schedule:
-    - cron: '15 * * * *'
+    - cron: '15 4 * 1 *'
   repository_dispatch:
     types: [api-build]
 
